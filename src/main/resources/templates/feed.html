@@ -20,7 +20,7 @@
 			<br/>
 			
 	        <h2>Tweets</h2>
-	        <div th:each="tweet:${tweetList}">
+	        <div th:each="tweet:${tweetList}" class="list-group list-group-item">
 	            <h5>
 	            	@<span th:text="${tweet.user.username}"></span>
 		            <small th:text="${tweet.date}"></small>
